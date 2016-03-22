@@ -1,0 +1,11 @@
+*homebrew* 
+```
+1. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. brew update
+3. brew doctor
+4. brew install curl
+5. brew link curl --force
+```
+
+
+
