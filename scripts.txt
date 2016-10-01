@@ -1,3 +1,12 @@
+Homebrew behind proxy:
+
+`ALL_PROXY=socks5://localhost:1080 brew install python3`
+
+or
+
+`proxy=http://username:password@host:port`:`.curlrc`
+
+
 **homebrew** 
 ```
 1. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -10,7 +19,7 @@
 **Xcode**
 ```
 1. curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
-2. pip3 install scapy-python3
+2. pip3 install scrapy
 3. pip3 install requests
 4. pip3 install beautifulsoup4
 5. pip3 install aiohttp
