@@ -1,3 +1,25 @@
+Python pip behind proxy:
+
+1. download or `pip3 install PySocks`
+
+2. edit pip source file `init.py`:
+
+```python
+# edited by cc
+need_socks5_proxy = input('need proxy? [y/n] default to YES')
+if need_socks5_proxy != 'n':
+    import socks
+    import socket
+    socks.set_default_proxy(socks.SOCKS5, "localhost")
+    socket.socket = socks.socksocket
+# end edit. added socks5 proxy support
+
+```
+
+or `--proxy <proxy>`
+
+
+
 Homebrew behind proxy:
 
 `ALL_PROXY=socks5://localhost:1080 brew install python3`
